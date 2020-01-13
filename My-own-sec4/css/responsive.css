@@ -18,18 +18,8 @@
         width: auto;
         margin-top:0;
     }
-    .column{
-        float: none;
-        width:auto;
-
-    }
-    .column-figure{
-        margin:0 auto;
-        max-width: 250px;
-        width:100%;
-    }
-    .column h2{
-        text-align: center;
+    .columns{
+        flex-direction: column;
     }
     nav{
         position: static; 

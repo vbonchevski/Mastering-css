@@ -1,4 +1,3 @@
-
 /*Fonts*/
 
 
@@ -7,9 +6,9 @@
   font-family: 'League Gothic';
   src: url('leaguegothic-regular-webfont.eot');
   src: url('leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('leaguegothic-regular-webfont.woff') format('woff'),
-       url('leaguegothic-regular-webfont.ttf') format('truetype'),
-       url('leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    url('leaguegothic-regular-webfont.woff') format('woff'),
+    url('leaguegothic-regular-webfont.ttf') format('truetype'),
+    url('leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
   font-weight: normal;
   font-style: normal;
 
@@ -20,9 +19,9 @@
   font-family: 'League Gothic';
   src: url('../fonts/leaguegothic-italic-webfont.eot');
   src: url('../fonts/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/leaguegothic-italic-webfont.woff') format('woff'),
-       url('../fonts/leaguegothic-italic-webfont.ttf') format('truetype'),
-       url('../fonts/leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
+    url('../fonts/leaguegothic-italic-webfont.woff') format('woff'),
+    url('../fonts/leaguegothic-italic-webfont.ttf') format('truetype'),
+    url('../fonts/leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
   font-weight: normal;
   font-style: italic;
 
@@ -33,9 +32,9 @@
   font-family: 'League Gothic Condensed';
   src: url('../fonts/leaguegothic-condensed-regular-webfont.eot');
   src: url('../fonts/leaguegothic-condensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/leaguegothic-condensed-regular-webfont.woff') format('woff'),
-       url('../fonts/leaguegothic-condensed-regular-webfont.ttf') format('truetype'),
-       url('../fonts/leaguegothic-condensed-regular-webfont.svg#league_gothic_condensed-Rg') format('svg');
+    url('../fonts/leaguegothic-condensed-regular-webfont.woff') format('woff'),
+    url('../fonts/leaguegothic-condensed-regular-webfont.ttf') format('truetype'),
+    url('../fonts/leaguegothic-condensed-regular-webfont.svg#league_gothic_condensed-Rg') format('svg');
   font-weight: normal;
   font-style: normal;
 
@@ -46,12 +45,13 @@
   font-family: 'League Gothic Condensed';
   src: url('../fonts/leaguegothic-condensed-italic-webfont.eot');
   src: url('../fonts/leaguegothic-condensed-italic-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/leaguegothic-condensed-italic-webfont.woff') format('woff'),
-       url('../fonts/leaguegothic-condensed-italic-webfont.ttf') format('truetype'),
-       url('../fonts/leaguegothic-condensed-italic-webfont.svg#league_gothic_condensed_itaRg') format('svg');
+    url('../fonts/leaguegothic-condensed-italic-webfont.woff') format('woff'),
+    url('../fonts/leaguegothic-condensed-italic-webfont.ttf') format('truetype'),
+    url('../fonts/leaguegothic-condensed-italic-webfont.svg#league_gothic_condensed_itaRg') format('svg');
   font-weight: normal;
   font-style: italic;
 }
+
 /*fonts end*/
 
 
@@ -109,9 +109,12 @@ p {
   line-height: 1.6 !important;
   margin-bottom: 20px;
 }
-h1, h2{
+
+h1,
+h2 {
   font-family: "League Gothic"
 }
+
 .content-block p {
   line-height: 1.8;
   margin-bottom: 30px;
@@ -221,19 +224,58 @@ Interior Pages
 /****************
 3 columns
 ****************/
-.secondary-section {
-  margin-bottom: 50px;
+.columns {
+  display: flex;
 }
 
-.column {
-  float: left;
-  width: 31.25%;
-  margin-left: 3.125%;
+.column figure {
+  max-width: 50%;
 }
 
-.column:first-child {
-  margin-left: 0;
+.column {}
+
+/***************
+Flexbox demo
+***************/
+
+.flex-container {
+  margin-top: 200px;
+  display: flex;
 }
+
+.flex-item {
+  padding: 20px;
+  /* flex-grow: 1;
+  flex-basis: 200px;
+  flex-shrink: 1; */
+  /*shorthand for the above ^^ grow : shrink : basis*/
+  flex: 1 1 200px;
+
+}
+
+.flex-item1 {
+  background: deeppink;
+}
+
+.flex-item2 {
+  background: orange;
+  flex-shrink: 2;
+}
+
+.flex-item3 {
+  background: lightblue;
+}
+
+.flex-item4 {
+  background: lime;
+}
+
+.flex-item5 {
+  background: olive;
+}
+
+
+
 
 
 /*Buttons Styles start*/
@@ -332,17 +374,17 @@ Interior Pages
 
 /*nav*/
 
-.mobile-menu-icon{
+.mobile-menu-icon {
   background: url('../images/mobile-menu-icon.png') 0 0 no-repeat;
-  height:26px;
-  width:30px;
+  height: 26px;
+  width: 30px;
   float: right;
-  margin:10px 15px;
+  margin: 10px 15px;
   cursor: pointer;
 }
 
-.mobile-menu-icon.open{
-  background: url('../images/mobile-menu-close-icon.png') ;
+.mobile-menu-icon.open {
+  background: url('../images/mobile-menu-close-icon.png');
 }
 
 nav {
@@ -370,8 +412,8 @@ nav {
   border-left: none;
 }
 
-.primary-nav.active{
-  max-height:400px;
+.primary-nav.active {
+  max-height: 400px;
   overflow: hidden;
 }
 
@@ -535,57 +577,60 @@ nav {
 /*Animation part 2*/
 
 
-footer{
-  background: #fff url('../images/seaweed.jpg') repeat-x 0 0 ;
+footer {
+  background: #fff url('../images/seaweed.jpg') repeat-x 0 0;
   padding: 142px 0;
-  font-size:14px;
+  font-size: 14px;
   line-height: 1.7;
 }
 
-footer ul{
+footer ul {
   float: left;
   margin: 0 100px 50px 0;
 }
 
-footer .list-heading{
+footer .list-heading {
   text-transform: uppercase;
-  color:#333;
+  color: #333;
   margin-bottom: 30px;
-  font-size:18px;
+  font-size: 18px;
 }
 
-footer a{
-  color:#333;
+footer a {
+  color: #333;
 }
-footer li, footer p{
+
+footer li,
+footer p {
   columns: #4d4d4d;
   line-height: 30px;
 }
-footer li{
+
+footer li {
   margin-bottom: 10px;
 }
-.legal-copy{
+
+.legal-copy {
   text-align: right;
-  font-size:10px;
+  font-size: 10px;
 }
 
-footer .icon{
-  font-size:30px;
-  margin-right:10px;
+footer .icon {
+  font-size: 30px;
+  margin-right: 10px;
   -webkit-transition: .25s color ease-in-out;
   -moz-transition: .25s color ease-in-out;
   -o-transition: .25s color ease-in-out;
   transition: .25s color ease-in-out;
 }
 
-footer a:hover .icon{
+footer a:hover .icon {
   color: red;
 }
 
-@media
-only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min-resolution:192dpi){
-  footer{
+@media only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (min-resolution:192dpi) {
+  footer {
     background-image: url('../images/seaweed@2x.jpg');
   }
 }
