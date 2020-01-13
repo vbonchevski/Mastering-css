@@ -21,6 +21,10 @@
     .columns{
         flex-direction: column;
     }
+    .column{
+        flex-basis: auto;
+        margin-bottom:50px;
+    }
     nav{
         position: static; 
     }
