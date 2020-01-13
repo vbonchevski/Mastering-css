@@ -261,7 +261,12 @@ Interior Pages
 /*nav*/
 
 
-
+nav{
+  background: #FFF;
+}
+nav img{
+  width:160px;
+}
 .primary-nav{
   float: right;
 }
@@ -276,6 +281,9 @@ Interior Pages
   width: 150px;
   border-left: 1px solid #333;
 
+}
+.primary-nav > li:first-child > a{
+  border:none;
 }
 
 nav li a {
