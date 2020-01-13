@@ -1,0 +1,68 @@
+
+
+.content-wrapper{
+  margin:0 auto;
+  width:960px;
+}
+/* .clear{
+  clear: both;
+} */
+
+/****************
+Interior Pages
+****************/
+.intro-content  {
+  width: 100%;
+  padding-bottom: 80px;
+}
+.content-block {
+  padding: 50px 0;
+}
+.content-block .figure {
+  margin: 30px;
+  float: right;
+}
+.content-block h1 {
+  color: #fff;
+  background-color: deeppink;
+  clear: none;
+}
+.content-block p {
+  font-family: Georgia, 'Times New Roman' sans-serif;
+  background-color: green;
+  clear: none;
+}
+.style-2 {
+  background-color: #494949;
+}
+.style-2 p {
+  color: #fff;
+}
+.style-1 {
+  background-color: #58C9EB;
+}
+.style-1.wave-border {
+  background: #58C9EB url('../images/wave.jpg') repeat-x 0 0;
+}
+ 
+
+/*centering content*/
+
+
+
+.content-column{
+  float: left;
+  width:300px;
+  margin-left:30px;
+}
+
+.content-column:first-child{
+  margin-left: 0;
+}
+
+.secondary-section{
+  background-color: green;
+  margin-bottom: 40px;
+}
+
+
