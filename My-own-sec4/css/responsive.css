@@ -1,4 +1,11 @@
-@media(min-width:767px) and (max-width:1023px){
+@media(min-width:901px) {
+    
+    #burger{
+        display:none;
+    }
+
+}
+@media screen and (max-width:900px){
     .intro-content{
         float:none;
         width:auto;
@@ -24,10 +31,6 @@
     .column h2{
         text-align: center;
     }
-    
-
-}
-@media screen and (max-width:900px){
     nav{
         position: static; 
     }

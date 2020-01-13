@@ -1,10 +1,58 @@
 
 /*Fonts*/
 
-@font-face{
-  src:('../fonts/League-Gothic-Regular.otf');
+
+/* Regular */
+@font-face {
   font-family: 'League Gothic';
+  src: url('leaguegothic-regular-webfont.eot');
+  src: url('leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('leaguegothic-regular-webfont.woff') format('woff'),
+       url('leaguegothic-regular-webfont.ttf') format('truetype'),
+       url('leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
 }
+
+/* Italic */
+@font-face {
+  font-family: 'League Gothic';
+  src: url('../fonts/leaguegothic-italic-webfont.eot');
+  src: url('../fonts/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/leaguegothic-italic-webfont.woff') format('woff'),
+       url('../fonts/leaguegothic-italic-webfont.ttf') format('truetype'),
+       url('../fonts/leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
+  font-weight: normal;
+  font-style: italic;
+
+}
+
+/* Condensed */
+@font-face {
+  font-family: 'League Gothic Condensed';
+  src: url('../fonts/leaguegothic-condensed-regular-webfont.eot');
+  src: url('../fonts/leaguegothic-condensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/leaguegothic-condensed-regular-webfont.woff') format('woff'),
+       url('../fonts/leaguegothic-condensed-regular-webfont.ttf') format('truetype'),
+       url('../fonts/leaguegothic-condensed-regular-webfont.svg#league_gothic_condensed-Rg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* Condensed Italic */
+@font-face {
+  font-family: 'League Gothic Condensed';
+  src: url('../fonts/leaguegothic-condensed-italic-webfont.eot');
+  src: url('../fonts/leaguegothic-condensed-italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/leaguegothic-condensed-italic-webfont.woff') format('woff'),
+       url('../fonts/leaguegothic-condensed-italic-webfont.ttf') format('truetype'),
+       url('../fonts/leaguegothic-condensed-italic-webfont.svg#league_gothic_condensed_itaRg') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+/*fonts end*/
 
 
 /***************
@@ -46,7 +94,7 @@ h1 {
   font-size: 80px;
   color: #0072ae;
   margin-bottom: 10px;
-
+  font-style: normal;
 }
 
 h2 {
@@ -54,6 +102,7 @@ h2 {
   margin-bottom: 10px;
   color: #eb2428;
   font-weight: 700;
+  font-style: italic;
 }
 
 p {
@@ -488,3 +537,42 @@ nav {
 
 
 
+footer ul{
+  float: left;
+  margin: 0 100px 50px 0;
+}
+
+footer .list-heading{
+  text-transform: uppercase;
+  color:#333;
+  margin-bottom: 30px;
+  font-size:18px;
+}
+
+footer a{
+  color:#333;
+}
+footer li, footer p{
+  columns: #4d4d4d;
+  line-height: 30px;
+}
+footer li{
+  margin-bottom: 10px;
+}
+.legal-copy{
+  text-align: right;
+  font-size:10px;
+}
+
+footer .icon{
+  font-size:30px;
+  margin-right:10px;
+  -webkit-transition: .25s color ease-in-out;
+  -moz-transition: .25s color ease-in-out;
+  -o-transition: .25s color ease-in-out;
+  transition: .25s color ease-in-out;
+}
+
+footer a:hover .icon{
+  color: red;
+}
