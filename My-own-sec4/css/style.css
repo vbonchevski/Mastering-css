@@ -315,3 +315,32 @@ nav {
   right:0;
   top:0;
 }
+
+
+/*Dropdown stylign*/
+
+.has-submenu ul{
+  position: absolute;
+  top:70px;
+  background-color:#FFF;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-color: #ada791;
+  width:150px;
+  overflow: hidden;
+  border-radius: 0 0 15px 15px;
+  display: none;
+}
+.has-submenu a{
+  display: block;
+  padding: 20px 0px;
+}
+.has-submenu:hover ul{
+  display:block;
+}
+
+
+/* .has-submenu ul:hover{
+  display:block;
+} */
