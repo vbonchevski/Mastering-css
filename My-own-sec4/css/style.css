@@ -112,6 +112,11 @@ Interior Pages
 .content-block .figure img{
   float: left;
   transition: .4s ;
+  -webkit-transition: .4s ;
+  -moz-transition: .4s ;
+  -o-transition: .4s ;
+  transition: .4s ;
+
 }
 .content-block .figure img:hover{
   transform: rotate(15deg) scale(1.2,1.2);
