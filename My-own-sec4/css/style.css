@@ -338,9 +338,25 @@ nav {
 }
 .has-submenu:hover ul{
   display:block;
+  animation-name: slideDown;
+  -webkit-animation-name: slideDown;
+  -webkit-animation-duration: .25s;
+  -webkit-animation-timing-function: ease;
+
+}
+@-webkit-keyframes slideDown{
+  /* from{
+    -webkit-transform: translateY(-100%);
+    
+  }
+  to{
+    -webkit-transform: translateY(0%);
+
+  } */
+  0%{-webkit-transform: translateY(-100%); opacity: 0;}
+  90%{-webkit-transform: translateY(10%);}
+  100%{-webkit-transform: translateY(0%); opacity: 1;}
 }
 
 
-/* .has-submenu ul:hover{
-  display:block;
-} */
+
