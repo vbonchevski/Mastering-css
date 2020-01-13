@@ -535,7 +535,12 @@ nav {
 /*Animation part 2*/
 
 
-
+footer{
+  background: #fff url('../images/seaweed.jpg') repeat-x 0 0 ;
+  padding: 142px 0;
+  font-size:14px;
+  line-height: 1.7;
+}
 
 footer ul{
   float: left;
@@ -575,4 +580,12 @@ footer .icon{
 
 footer a:hover .icon{
   color: red;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (min-resolution:192dpi){
+  footer{
+    background-image: url('../images/seaweed@2x.jpg');
+  }
 }
