@@ -347,6 +347,7 @@ nav {
   left:0;
   right:0;
   top:0;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
 }
 
 
@@ -364,10 +365,13 @@ nav {
   overflow: hidden;
   border-radius: 0 0 15px 15px;
   display: none;
+  z-index: 5;
 }
 .has-submenu a{
   display: block;
   padding: 20px 0px;
+  position: relative;
+  z-index: 10;
 }
 .has-submenu:hover ul{
   display:block;
