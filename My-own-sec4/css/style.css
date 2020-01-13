@@ -308,6 +308,39 @@ nav figure {
   position: absolute;
   top:-20px;
   left: 50px;
+  -webkit-animation-name: sharkAnimation 1s ease;
+  animation-name: sharkAnimation 1s ease;
+
+}
+
+
+
+@-webkit-keyframes sharkAnimation{
+  /* from{
+    -webkit-transform: translateY(-100%);
+    
+  }
+  to{
+    -webkit-transform: translateY(0%);
+
+  } */
+  0%{-webkit-transform: translate(90%,70%); opacity: 0;}
+  33%{-webkit-transform: translate(40%,20%) ;}
+  66%{-webkit-transform: translate(10%,50%);}
+  100%{-webkit-transform: translate(0%);opacity: 1;}
+}@keyframes sharkAnimation{
+  /* from{
+    -webkit-transform: translateY(-100%);
+    
+  }
+  to{
+    -webkit-transform: translateY(0%);
+
+  } */
+  0%{transform: translate(90%,70%); opacity: 0;}
+  33%{transform: translate(40%,20%) ;}
+  66%{transform: translate(10%,50%);}
+  100%{transform: translate(0%);opacity: 1;}
 }
 nav {
   position: fixed;
@@ -357,6 +390,10 @@ nav {
   90%{-webkit-transform: translateY(10%);}
   100%{-webkit-transform: translateY(0%); opacity: 1;}
 }
+
+
+/*Animation part 2*/
+
 
 
 
