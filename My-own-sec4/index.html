@@ -4,13 +4,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- description -->
 	<title>Section 4-Creating Buttons with Modular, Re-Usable CSS - Mastering CSS</title>
 
 	<!-- stylesheets -->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
 
 	<!-- stylesheets for older browsers -->
 	<!-- ie6/7 micro clearfix -->
@@ -35,7 +36,9 @@
 		<figure>
 			<img src="images/sharky.png" alt="shark png">
 		</figure>
-		<ul class="primary-nav">
+		<div id="burger" class="mobile-menu-icon"></div>
+
+		<ul class="primary-nav hideMobile" id="nav-container">
 			<li ><a class="active" href="./index.html">Home</a></li>
 			<li class="has-submenu"><a href="./shark-movies.html">Movies</a>
 				<ul>
@@ -112,7 +115,11 @@ Secondary Sections
 
 	</section>
 
-
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script src="custom.js"></script>
 </body>
 
 </html>

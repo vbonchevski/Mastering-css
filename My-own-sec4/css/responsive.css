@@ -1,0 +1,90 @@
+@media(min-width:767px) and (max-width:1023px){
+    .intro-content{
+        float:none;
+        width:auto;
+        padding-bottom:0;
+        margin-bottom: 30px;
+        margin-top:150px; 
+    }
+    .go-premium{
+        float: none;
+        width: auto;
+        margin-top:0;
+    }
+    .column{
+        float: none;
+        width:auto;
+
+    }
+    .column-figure{
+        margin:0 auto;
+        max-width: 250px;
+        width:100%;
+    }
+    .column h2{
+        text-align: center;
+    }
+    
+
+}
+@media screen and (max-width:900px){
+    nav{
+        position: static; 
+    }
+    .primary-nav{
+        width:100%;
+        transition: .40s all ease;
+        -webkit-transition: .40s all ease;
+        -moz-transition: .40s all ease;
+        -o-transition: .40s all ease;
+    }
+    .primary-nav >li {
+        width: 100%;
+        float: right;
+    }
+    .primary-nav > li  a{
+        text-align: right;
+        padding: 15px 25px 15px 0;
+        width:100%;
+        border-bottom: 1px solid #CCC;
+         
+    }
+    nav figure{
+        width:100px;
+        top:0;
+        left:20;
+    }
+    .has-submenu ul{
+        position:static;
+        display:block;
+        border-radius:0;
+        border:none;
+        width:100%;
+
+    }
+    .has-submenu a{
+        text-align: right;
+
+    }
+    .has-submenu:hover ul{
+        -webkit-animation: none;
+        animation: none;
+        
+    }
+    .hideMobile{
+        max-height:0;
+        overflow: hidden;
+        transition: .40s all ease;
+        -webkit-transition: .40s all ease;
+        -moz-transition: .40s all ease;
+        -o-transition: .40s all ease;
+    }
+    .openMobile{
+        max-height: auto;
+        overflow: auto;
+        transition: .40s all ease;
+        -webkit-transition: .40s all ease;
+        -moz-transition: .40s all ease;
+        -o-transition: .40s all ease;
+    }
+}
