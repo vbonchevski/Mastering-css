@@ -100,6 +100,7 @@ Interior Pages
 .intro-content {
   width: 100%;
   padding-bottom: 80px;
+  margin-top: 150px;
 }
 
 .content-block {
@@ -302,4 +303,15 @@ nav li a:hover,
 nav li a.active{
   background-color:#eb2428;
   color:#fff;
+}
+nav figure {
+  position: absolute;
+  top:-20px;
+  left: 50px;
+}
+nav {
+  position: fixed;
+  left:0;
+  right:0;
+  top:0;
 }
